@@ -2,7 +2,7 @@ import { Plugin, Server } from '@hapi/hapi'
 import * as HapiSwagger from 'hapi-swagger'
 import * as pkg from '../../package.json'
 import { swaggerOptions } from './swagger'
-import { Students } from './students'
+import { Users } from './users'
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const Api: Plugin<any> = {
@@ -17,6 +17,6 @@ export const Api: Plugin<any> = {
       options: swaggerOptions
     })
 
-    server.register([Students], { routes: { prefix: '/v1' } })
+    server.register([Users], { routes: { prefix: '/v1' } })
   }
 }

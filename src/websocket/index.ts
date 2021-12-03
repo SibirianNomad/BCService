@@ -1,6 +1,8 @@
 import { Plugin, Server } from '@hapi/hapi'
-import * as Nes from '@hapi/nes'
 import * as pkg from '../../package.json'
+import { Contract, Web3Http } from './../services/bcService'
+import { findUser, findUserWallet } from './../database/users'
+import { findWallet } from './../database/wallets'
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export type WebsocketOptions = Record<string, any>
@@ -9,18 +11,31 @@ export const Websocket: Plugin<WebsocketOptions> = {
   name: 'websocket',
   version: pkg.version,
   register: async (server: Server, options: WebsocketOptions) => {
-    await server.register({
-      plugin: Nes,
-      options: {
-        /* TODO: it is up to developer to add necessary configuration here */
-        ...options
+    // subscribe on contract event Deposit
+    Contract.events.Deposit((error, event) => {
+      if (!error) {
+        findUser(event.returnValues.addressOwner).then((data) => {
+          const id = data[0].dataValues.id
+          findWallet({
+            user_id: id,
+            token_id: event.returnValues.addressToken
+          }).then((data) => {
+            data[0].increment('sum', { by: Web3Http.utils.fromWei(event.returnValues.amount) })
+          })
+        })
+      } else {
+        console.error(error)
       }
     })
-
-    /* TODO: add ws subscriptions here */
-    await server.subscription('/example', {
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      filter: (path: string, message: any, options: any) => true
+    // subscribe on contract event Withdraw
+    Contract.events.Withdraw((error, event) => {
+      if (!error) {
+        findUserWallet(event.returnValues.account, event.returnValues.token).then((data) => {
+          data.wallet.decrement('sum', { by: Web3Http.utils.fromWei(event.returnValues.amount) })
+        })
+      } else {
+        console.error(error)
+      }
     })
 
     // eslint-disable-next-line @typescript-eslint/no-explicit-any

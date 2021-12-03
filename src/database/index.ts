@@ -1,6 +1,8 @@
 import { Sequelize } from 'sequelize-typescript'
 import { Plugin, Server } from '@hapi/hapi'
 import * as pkg from '../../package.json'
+import { UserModel } from './users'
+import { WalletModel } from './wallets'
 
 export type DatabaseOptions = Partial<{
   /**
@@ -57,10 +59,9 @@ export const Database: Plugin<DatabaseOptions> = {
     } else {
       sequelize = new Sequelize({
         ...options,
-        models: []
+        models: [UserModel, WalletModel]
       })
     }
-
     server.expose(sequelize)
   }
 }

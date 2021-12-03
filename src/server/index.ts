@@ -40,12 +40,12 @@ export const createServer = async (): Promise<Hapi.Server> => {
   await server.register<DatabaseOptions>({
     plugin: Database,
     options: {
-      dialect: 'mysql',
+      dialect: 'postgres',
       host: config.Server.db_host,
       database: config.Server.db_name,
       username: config.Server.db_user,
       password: config.Server.db_pass,
-      port: 3306
+      port: 5432
     }
   })
 

@@ -15,3 +15,9 @@ export const Auth = {
   refresh_secret: String(process.env.AUTH_JWT_REFRESH_SECRET),
   jwt_refresh_lifetime: String(process.env.AUTH_JWT_REFRESH_LIFETIME)
 }
+
+export const BcVariable = {
+  http_provider: String(process.env.HTTP_PROVIDER),
+  wss_provider: String(process.env.WSS_PROVIDER),
+  contract_address: String(process.env.CONTRACT_ADDRERSS)
+}

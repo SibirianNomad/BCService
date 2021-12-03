@@ -1,0 +1,237 @@
+deposit(пополнение депозита) with ETH {
+[1]   removed: false,
+[1]   logIndex: 1,
+[1]   transactionIndex: 1,
+[1]   transactionHash: '0x9f1a8fad5dc6e40dae0c88b00e3c7179c1ec918c6c20c5655755f29b6ba27b99',
+[1]   blockHash: '0xaecca177e3aa121ce116c21129b91520f9cd60924412d08b74b144b670d6eb82',
+[1]   blockNumber: 9730460,
+[1]   address: '0x9F637286498b52f63e7C43BB758214C52F2D6E1b',
+[1]   id: 'log_a07acdd2',
+[1]   returnValues: Result {
+[1]     '0': '0xd86Dc92ae4e81BC0102e85259275926C36BB320D',
+[1]     '1': '10000000000000000',
+[1]     '2': '0x465aA465A465A465A132a68A132A468a132A6813',
+[1]     addressOwner: '0xd86Dc92ae4e81BC0102e85259275926C36BB320D',
+[1]     amount: '10000000000000000',
+[1]     addressToken: '0x465aA465A465A465A132a68A132A468a132A6813'
+[1]   },
+[1]   event: 'Deposit',
+[1]   signature: '0xe31c7b8d08ee7db0afa68782e1028ef92305caeea8626633ad44d413e30f6b2f',
+[1]   raw: {
+[1]     data: '0x000000000000000000000000d86dc92ae4e81bc0102e85259275926c36bb320d000000000000000000000000000000000000000000000000002386f26fc10000000000000000000000000000465aa465a465a465a132a68a132a468a132a6813',
+[1]     topics: [
+[1]       '0xe31c7b8d08ee7db0afa68782e1028ef92305caeea8626633ad44d413e30f6b2f'
+[1]     ]
+[1]   }
+[1] }
+10000000000000000
+1000000000000000000
+deposit with DEI
+{
+[1]   removed: false,
+[1]   logIndex: 3,
+[1]   transactionIndex: 4,
+[1]   transactionHash: '0x1fc87950edcf482d5eb0c5d0fbe682a132720319828d0f25fc7b32a0515575c1',
+[1]   blockHash: '0xfcc6a7ae4cd5ce70938f4feca73180a7ef2ad9d6937cf4646dec3a173a0ed92f',
+[1]   blockNumber: 9742209,
+[1]   address: '0x9F637286498b52f63e7C43BB758214C52F2D6E1b',
+[1]   id: 'log_1e623f3b',
+[1]   returnValues: Result {
+[1]     '0': '0xd86Dc92ae4e81BC0102e85259275926C36BB320D',
+[1]     '1': '1000000000000000000',
+[1]     '2': '0x7bF5fa9C605BF63a21C6Cb87fDEaB6A4135Ce4Ad',
+[1]     addressOwner: '0xd86Dc92ae4e81BC0102e85259275926C36BB320D',
+[1]     amount: '1000000000000000000',
+[1]     addressToken: '0x7bF5fa9C605BF63a21C6Cb87fDEaB6A4135Ce4Ad'
+[1]   },
+[1]   event: 'Deposit',
+[1]   signature: '0xe31c7b8d08ee7db0afa68782e1028ef92305caeea8626633ad44d413e30f6b2f',
+[1]   raw: {
+[1]     data: '0x000000000000000000000000d86dc92ae4e81bc0102e85259275926c36bb320d0000000000000000000000000000000000000000000000000de0b6b3a76400000000000000000000000000007bf5fa9c605bf63a21c6cb87fdeab6a4135ce4ad',
+[1]     topics: [
+[1]       '0xe31c7b8d08ee7db0afa68782e1028ef92305caeea8626633ad44d413e30f6b2f'
+[1]     ]
+[1]   }
+[1] }
+
+ Withdraw(вынесение средств) {
+[1]   removed: false,
+[1]   logIndex: 5,
+[1]   transactionIndex: 3,
+[1]   transactionHash: '0xc16332454e6f92783168fb72969c7825c9cbf232106f93a3e20c2a878ab0abbf',
+[1]   blockHash: '0x878895ebe6f0b1a16e49c384b4538bbc324a2487d8389a82d36c6ee7b2a00844',
+[1]   blockNumber: 9730545,
+[1]   address: '0x9F637286498b52f63e7C43BB758214C52F2D6E1b',
+[1]   id: 'log_5be11571',
+[1]   returnValues: Result {
+[1]     '0': '0xd86Dc92ae4e81BC0102e85259275926C36BB320D',
+[1]     '1': '100000000000000000',
+[1]     '2': '0x465aA465A465A465A132a68A132A468a132A6813',
+[1]     account: '0xd86Dc92ae4e81BC0102e85259275926C36BB320D',
+[1]     amount: '100000000000000000',
+[1]     token: '0x465aA465A465A465A132a68A132A468a132A6813'
+[1]   },
+[1]   event: 'Withdraw',
+[1]   signature: '0x56c54ba9bd38d8fd62012e42c7ee564519b09763c426d331b3661b537ead19b2',
+[1]   raw: {
+[1]     data: '0x000000000000000000000000d86dc92ae4e81bc0102e85259275926c36bb320d000000000000000000000000000000000000000000000000016345785d8a0000000000000000000000000000465aa465a465a465a132a68a132a468a132a6813',
+[1]     topics: [
+[1]       '0x56c54ba9bd38d8fd62012e42c7ee564519b09763c426d331b3661b537ead19b2'
+[1]     ]
+[1]   }
+[1] }
+
+
+'0x31Bc1ED55782B80c6941cb32b4b3BBE0F04A613a',
+[1]   '0xfDbcf1bD97933dd6e0E9597dEf12b33510b78978',
+[1]   '0x465aA465A465A465A132a68A132A468a132A6813',
+[1]   '0x0367938623340468E7a57382665583260FC03633',
+[1]   '0x23abB876F3771D034b8A73EdC8f500FA727B1Ff5',
+[1]   '0x6F1cB6c43850CF91f311483181DCd2CA8ac75daE',
+[1]   '0x96a43d09b4eC011D856c1c1cE26B2fc96627f7d6',
+[1]   '0x16eB1e70e3f001B30F2Abb56713EA5D282B6690E',
+[1]   '0x7bF5fa9C605BF63a21C6Cb87fDEaB6A4135Ce4Ad',
+[1]   '0x6626Ac573877B277E3cAcA3Bc7080c47569dc40D'
+
+
+ADMIN_ROLE: [Function: bound _createTxObject],
+[1]   '0x75b238fc': [Function: bound _createTxObject],
+[1]   'ADMIN_ROLE()': [Function: bound _createTxObject],
+[1]   BURNER_ROLE: [Function: bound _createTxObject],
+[1]   '0x282c51f3': [Function: bound _createTxObject],
+[1]   'BURNER_ROLE()': [Function: bound _createTxObject],
+[1]   DEFAULT_ADMIN_ROLE: [Function: bound _createTxObject],
+[1]   '0xa217fddf': [Function: bound _createTxObject],
+[1]   'DEFAULT_ADMIN_ROLE()': [Function: bound _createTxObject],
+[1]   MINTER_ROLE: [Function: bound _createTxObject],
+[1]   '0xd5391393': [Function: bound _createTxObject],
+[1]   'MINTER_ROLE()': [Function: bound _createTxObject],
+[1]   allowance: [Function: bound _createTxObject],
+[1]   '0xdd62ed3e': [Function: bound _createTxObject],
+[1]   'allowance(address,address)': [Function: bound _createTxObject],
+[1]   approve: [Function: bound _createTxObject],
+[1]   '0x095ea7b3': [Function: bound _createTxObject],
+[1]   'approve(address,uint256)': [Function: bound _createTxObject],
+[1]   balanceOf: [Function: bound _createTxObject],
+[1]   '0x70a08231': [Function: bound _createTxObject],
+[1]   'balanceOf(address)': [Function: bound _createTxObject],
+[1]   cap: [Function: bound _createTxObject],
+[1]   '0x355274ea': [Function: bound _createTxObject],
+[1]   'cap()': [Function: bound _createTxObject],
+[1]   decimals: [Function: bound _createTxObject],
+[1]   '0x313ce567': [Function: bound _createTxObject],
+[1]   'decimals()': [Function: bound _createTxObject],
+[1]   decreaseAllowance: [Function: bound _createTxObject],
+[1]   '0xa457c2d7': [Function: bound _createTxObject],
+[1]   'decreaseAllowance(address,uint256)': [Function: bound _createTxObject],
+[1]   getRoleAdmin: [Function: bound _createTxObject],
+[1]   '0x248a9ca3': [Function: bound _createTxObject],
+[1]   'getRoleAdmin(bytes32)': [Function: bound _createTxObject],
+[1]   getRoleMember: [Function: bound _createTxObject],
+[1]   '0x9010d07c': [Function: bound _createTxObject],
+[1]   'getRoleMember(bytes32,uint256)': [Function: bound _createTxObject],
+[1]   getRoleMemberCount: [Function: bound _createTxObject],
+[1]   '0xca15c873': [Function: bound _createTxObject],
+[1]   'getRoleMemberCount(bytes32)': [Function: bound _createTxObject],
+[1]   grantRole: [Function: bound _createTxObject],
+[1]   '0x2f2ff15d': [Function: bound _createTxObject],
+[1]   'grantRole(bytes32,address)': [Function: bound _createTxObject],
+[1]   hasRole: [Function: bound _createTxObject],
+[1]   '0x91d14854': [Function: bound _createTxObject],
+[1]   'hasRole(bytes32,address)': [Function: bound _createTxObject],
+[1]   increaseAllowance: [Function: bound _createTxObject],
+[1]   '0x39509351': [Function: bound _createTxObject],
+[1]   'increaseAllowance(address,uint256)': [Function: bound _createTxObject],
+[1]   name: [Function: bound _createTxObject],
+[1]   '0x06fdde03': [Function: bound _createTxObject],
+[1]   'name()': [Function: bound _createTxObject],
+[1]   renounceRole: [Function: bound _createTxObject],
+[1]   '0x36568abe': [Function: bound _createTxObject],
+[1]   'renounceRole(bytes32,address)': [Function: bound _createTxObject],
+[1]   revokeRole: [Function: bound _createTxObject],
+[1]   '0xd547741f': [Function: bound _createTxObject],
+[1]   'revokeRole(bytes32,address)': [Function: bound _createTxObject],
+[1]   symbol: [Function: bound _createTxObject],
+[1]   '0x95d89b41': [Function: bound _createTxObject],
+[1]   'symbol()': [Function: bound _createTxObject],
+[1]   totalSupply: [Function: bound _createTxObject],
+[1]   '0x18160ddd': [Function: bound _createTxObject],
+[1]   'totalSupply()': [Function: bound _createTxObject],
+[1]   transfer: [Function: bound _createTxObject],
+[1]   '0xa9059cbb': [Function: bound _createTxObject],
+[1]   'transfer(address,uint256)': [Function: bound _createTxObject],
+[1]   transferFrom: [Function: bound _createTxObject],
+[1]   '0x23b872dd': [Function: bound _createTxObject],
+[1]   'transferFrom(address,address,uint256)': [Function: bound _createTxObject],
+[1]   mint: [Function: bound _createTxObject],
+[1]   '0x40c10f19': [Function: bound _createTxObject],
+[1]   'mint(address,uint256)': [Function: bound _createTxObject],
+[1]   burn: [Function: bound _createTxObject],
+[1]   '0x9dc29fac': [Function: bound _createTxObject],
+[1]   'burn(address,uint256)': [Function: bound _createTxObject]
+
+
+serModel {
+[1]   dataValues: {
+[1]     id: '626d8cf6-74e1-47fc-95a7-af1725dc7ab1',
+[1]     wallet_id: '0xd86Dc92ae4e81BC0102e85259275926C36BB320D',
+[1]     student: WalletModel {
+[1]       dataValues: [Object],
+[1]       _previousDataValues: [Object],
+[1]       _changed: Set(0) {},
+[1]       _options: [Object],
+[1]       isNewRecord: false
+[1]     }
+[1]   },
+[1]   _previousDataValues: {
+[1]     id: '626d8cf6-74e1-47fc-95a7-af1725dc7ab1',
+[1]     wallet_id: '0xd86Dc92ae4e81BC0102e85259275926C36BB320D',
+[1]     student: WalletModel {
+[1]       dataValues: [Object],
+[1]       _previousDataValues: [Object],
+[1]       _changed: Set(0) {},
+[1]       _options: [Object],
+[1]       isNewRecord: false
+[1]     }
+[1]   },
+[1]   _changed: Set(0) {},
+[1]   _options: {
+[1]     isNewRecord: false,
+[1]     _schema: null,
+[1]     _schemaDelimiter: '',
+[1]     include: [ [Object] ],
+[1]     includeNames: [ 'student' ],
+[1]     includeMap: { student: [Object] },
+[1]     includeValidated: true,
+[1]     attributes: [ 'id', 'wallet_id' ],
+[1]     raw: true
+[1]   },
+[1]   isNewRecord: false,
+[1]   student: WalletModel {
+[1]     dataValues: {
+[1]       id: 'c714fe68-1d22-439a-81fe-d7253b5b42e5',
+[1]       user_id: '626d8cf6-74e1-47fc-95a7-af1725dc7ab1',
+[1]       token_id: '0x7bF5fa9C605BF63a21C6Cb87fDEaB6A4135Ce4Ad',
+[1]       sum: 3
+[1]     },
+[1]     _previousDataValues: {
+[1]       id: 'c714fe68-1d22-439a-81fe-d7253b5b42e5',
+[1]       user_id: '626d8cf6-74e1-47fc-95a7-af1725dc7ab1',
+[1]       token_id: '0x7bF5fa9C605BF63a21C6Cb87fDEaB6A4135Ce4Ad',
+[1]       sum: 3
+[1]     },
+[1]     _changed: Set(0) {},
+[1]     _options: {
+[1]       isNewRecord: false,
+[1]       _schema: null,
+[1]       _schemaDelimiter: '',
+[1]       include: undefined,
+[1]       includeNames: undefined,
+[1]       includeMap: undefined,
+[1]       includeValidated: true,
+[1]       raw: true,
+[1]       attributes: undefined
+[1]     },
+[1]     isNewRecord: false
+[1]   }
+[1] }

@@ -38,7 +38,7 @@ export type CreateWallet = Omit<WalletDto, 'id' | 'sum'| 'created_at' | 'updated
   timestamps: true
 })
 export class WalletModel extends Model<WalletDto, CreateWallet> implements WalletDto {
-  @Default(uuid.v4())
+  @Default(() => uuid.v4())
   @PrimaryKey
   @Column(DataType.STRING)
   id: string

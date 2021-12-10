@@ -36,7 +36,7 @@ export interface UserDto {
   timestamps: true
 })
 export class UserModel extends Model<UserDto> implements UserDto {
-  @Default(uuid.v4())
+  @Default(() => uuid.v4())
   @PrimaryKey
   @Column(DataType.STRING)
   id: string

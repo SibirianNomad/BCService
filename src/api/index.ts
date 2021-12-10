@@ -2,7 +2,7 @@ import { Plugin, Server } from '@hapi/hapi'
 import * as HapiSwagger from 'hapi-swagger'
 import * as pkg from '../../package.json'
 import { swaggerOptions } from './swagger'
-import { Users } from './users'
+import { Users } from './blockchain'
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const Api: Plugin<any> = {

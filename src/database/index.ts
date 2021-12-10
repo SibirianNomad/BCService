@@ -3,6 +3,7 @@ import { Plugin, Server } from '@hapi/hapi'
 import * as pkg from '../../package.json'
 import { UserModel } from './users'
 import { WalletModel } from './wallets'
+import { TransactionModel } from './transactions'
 
 export type DatabaseOptions = Partial<{
   /**
@@ -59,7 +60,7 @@ export const Database: Plugin<DatabaseOptions> = {
     } else {
       sequelize = new Sequelize({
         ...options,
-        models: [UserModel, WalletModel]
+        models: [UserModel, WalletModel, TransactionModel]
       })
     }
     server.expose(sequelize)

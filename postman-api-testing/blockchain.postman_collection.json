@@ -1,0 +1,191 @@
+{
+	"info": {
+		"_postman_id": "c7e10595-9d90-49c8-9429-508d49e3c8a5",
+		"name": "blockchain",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get info about token",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/token?token_id=0x31Bc1ED55782B80c6941cb32b4b3BBE0F04A613a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"token"
+					],
+					"query": [
+						{
+							"key": "token_id",
+							"value": "0x31Bc1ED55782B80c6941cb32b4b3BBE0F04A613a"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all tokens",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/tokens",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"tokens"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deposit",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"token_id\":\"0x7bF5fa9C605BF63a21C6Cb87fDEaB6A4135Ce4Ad\",\n    \"amount\": \"1\",\n    \"wallet_id\": \"0xd86Dc92ae4e81BC0102e85259275926C36BB320D\",\n    \"private_key\":\"0xb63a3ebaa0efe4ac96981f952fa96d57ce0611e067e2f0470658625084a0843d\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/deposit",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"deposit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "withdraw",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"token_id\":\"0x7bF5fa9C605BF63a21C6Cb87fDEaB6A4135Ce4Ad\",\n    \"amount\": \"1\",\n    \"wallet_id\": \"0xd86Dc92ae4e81BC0102e85259275926C36BB320D\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/withdraw",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"withdraw"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "approve",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"token_id\":\"0x7bF5fa9C605BF63a21C6Cb87fDEaB6A4135Ce4Ad\",\n    \"amount\": \"10000\",\n    \"wallet_id\": \"0xd86Dc92ae4e81BC0102e85259275926C36BB320D\",\n    \"private_key\":\"0xb63a3ebaa0efe4ac96981f952fa96d57ce0611e067e2f0470658625084a0843d\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/approve",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"approve"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

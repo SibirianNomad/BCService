@@ -55,8 +55,8 @@ export const deposit = async (request: Request, reply: ResponseToolkit): Promise
 
   const result = await checkApiPayload(token_id, wallet_id)
 
-  if (!result) {
-    return reply.response('incorrect wallet').code(422)
+  if (result) {
+    return reply.response(result).code(422)
   }
 
   const acc = await initAccountWithPrivateKey(private_key)
@@ -85,7 +85,7 @@ export const withdraw = async (request: Request, reply: ResponseToolkit): Promis
 
   const result = await checkApiPayload(token_id, wallet_id)
 
-  if (!result) {
+  if (result) {
     return reply.response('incorrect wallet').code(404)
   }
 

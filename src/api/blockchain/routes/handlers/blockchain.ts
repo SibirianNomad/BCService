@@ -42,8 +42,8 @@ export const approve = async (request: Request, reply: ResponseToolkit): Promise
 
   contract_token.methods.approve(config.BcVariable.contract_address, amount_bc).send({
     from: acc.address,
-    gasPrice: Web3Http.utils.toHex(gasPrice),
-    gas: Web3Http.utils.toHex(gasEstimate)
+    gasPrice: gasPrice,
+    gas: gasEstimate
   }, (err, data) => {
     console.log('err', err, 'data', data)
   })
@@ -71,8 +71,8 @@ export const deposit = async (request: Request, reply: ResponseToolkit): Promise
 
   contract.methods.deposit(amount_bc, token_id).send({
     from: acc.address,
-    gasPrice: Web3Http.utils.toHex(gasPrice),
-    gas: Web3Http.utils.toHex(gasEstimate)
+    gasPrice: gasPrice,
+    gas: gasEstimate
   }, (err, data) => {
     console.log('err', err, 'data', data)
   })
@@ -101,8 +101,8 @@ export const withdraw = async (request: Request, reply: ResponseToolkit): Promis
 
   contract.methods.withdraw(amount_bc, token_id).send({
     from: acc.address,
-    gasPrice: Web3Http.utils.toHex(gasPrice),
-    gas: Web3Http.utils.toHex(gasEstimate)
+    gasPrice: gasPrice,
+    gas: gasEstimate
   }, (err, data) => {
     console.log('err', err, 'data', data)
   })
